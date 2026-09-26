@@ -8,50 +8,82 @@
 ## Get latest from https://github.com/github/gitignore/blob/main/Dotnet.gitignore
 
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-[Ww][Ii][Nn]32/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-bld/
 [Bb]in/
 [Oo]bj/
-[Ll]og/
-[Ll]ogs/
-
-# .NET Core
-project.lock.json
-project.fragment.lock.json
+out/
 artifacts/
+publish/
 
-# ASP.NET Scaffolding
-ScaffoldingReadMe.txt
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# NuGet Packages
+# Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# NuGet
 *.nupkg
-# NuGet Symbol Packages
-*.snupkg
+packages/
+.nuget/
 
-# dotenv environment variables file
-.env
+# Dotnet tool manifests
+dotnet-tools.json
 
-# Others
-~$*
-*~
-CodeCoverage/
+# Publish / packaging
+*.publishsettings
+*.pubxml
 
-# MSBuild Binary and Structured Log
-*.binlog
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
 
-# MSTest test Results
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
+# Database files
+*.mdf
+*.ldf
+*.db
+*.db-journal
+*.dbmdl
 
-# NUnit
-*.VisualState.xml
-TestResult.xml
-nunit-*.xml
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Rider caches
+.idea/
+*.sln.iml
+
+# Local settings (Azure Functions, user secrets, etc.)
+local.settings.json
+secrets.json
+secrets.*.json
+
+# Logs
+*.log
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Packaging
+*.vsix
+
+# Ignore compiled binaries (optional)
+*.exe
+*.dll
+*.pdb
+
+# JetBrains Rider caches (redundant, safe)
+.idea/
+
+# End of .gitignore
