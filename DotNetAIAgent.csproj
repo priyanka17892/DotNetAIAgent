@@ -4,6 +4,18 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <!-- Exclude the console project sources located in WeatherAgentConsole/ so they are built in their own project -->
+  <ItemGroup>
+    <Compile Remove="WeatherAgentConsole\**\*.cs" />
+    <None Remove="WeatherAgentConsole\**" />
+    <Content Remove="WeatherAgentConsole\**" />
+  </ItemGroup>
 
 </Project>
